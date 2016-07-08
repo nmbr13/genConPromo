@@ -1,0 +1,116 @@
+body {
+    margin: 0px 0px;
+    background: black;
+    color: white;
+    font-family: sans-serif;
+}
+h1 {
+    font-family: "mason-sans";
+}
+.slide {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    overflow: hidden;
+}
+.slide:nth-child(odd) {
+    background-color: black;
+}
+.slide:nth-child(even) {
+    background-color: #222;
+}
+#slide1 {
+    background-image: url(../imgs/amabilia.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+footer {
+    background: grey;
+}
+.container {}
+.navArrow {
+    position: absolute;
+    bottom: 10px;
+    left: 49%;
+    display: block;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+}
+.navArrow:hover {
+    color: red;
+}
+.welcome {
+    position: relative;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 30vh;
+    z-index: 1000;
+}
+.welcome> h1 {
+    font-size: 10em;
+}
+.btn-ghost {
+    background: none;
+    border: .25em solid white;
+    padding: 10px 15px;
+    margin: 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.btn-ghost:hover {
+    color: black;
+    background: rgba(255, 255, 255, .75);
+}
+
+/*Triple Images*/
+
+#slide3 p {
+    height: 50px;
+}
+.featureImage {
+    width: auto;
+}
+.tripleImage {
+    width: 100%;
+    height: 300px;
+    background-image: url(http://placehold.it/350x300);
+    background-size: cover;
+    background-position: center;
+}
+.col-3-feature {
+    text-align: center;
+}
+
+/*Webbing*/
+
+.web-1 {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 750px;
+    height: 750px;
+    background: url("../imgs/Web_01.png");
+    background-size: cover;
+    z-index: 2;
+}
+.web-2 {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    background: url("../imgs/Web_02.png");
+    background-size: cover;
+    z-index: 2;
+}
