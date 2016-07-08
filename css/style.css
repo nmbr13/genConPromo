@@ -21,14 +21,21 @@ h1 {
 .slide:nth-child(even) {
     background-color: #222;
 }
-#slide1 {
+.video{
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    width:100vw;
+    height:100vh;
+}
+/*#slide1 {
     background-image: url("../imgs/amabilia.jpg");
     background-color: black;
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
     background-size: cover;
-}
+}*/
 .transistionImg{
     width: 100%;
     height:auto;
