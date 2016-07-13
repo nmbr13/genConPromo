@@ -6,16 +6,6 @@ $(document).ready(function(){
     console.log(tweetText);
 
 
-    $('.ion-social-twitter').click(function(){
-    });
-
-    $('.ion-social-facebook').click(function(){
-    });
-
-    $('.ion-social-instagram').click(function(){
-        alert("Instagram");
-    });
-
     // Add smooth scrolling to all links
     $(".navArrow").on('click', function(event) {
 
