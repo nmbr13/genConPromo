@@ -116,9 +116,6 @@ textbox > p{
 }
 
 /*Triple Images*/
-#slide3 p {
-    height: 50px;
-}
 .featureImage {
     width: auto;
 }
@@ -136,8 +133,9 @@ textbox > p{
 /*---------Menu---------*/
 #menu{
     position:absolute;
-    display: block;
+    display: inline-block;
     top:0px;
+    left: 50px;
     width:100%;
     padding-top: 20px;
     padding-bottom:10px;
