@@ -8,12 +8,14 @@ body {
 h1{
     font-family: 'Stalinist One', sans-serif;
     font-size: 7em;
+    text-align: center;
     text-transform: uppercase;
     text-shadow: 3px 3px 0px black, 4px 4px 0px white;
 }
 h2{
     font-family: 'Stalinist One', sans-serif;
     font-size: 3em;
+    text-align: center;
 }
 h3{
     font-family: 'Stalinist One', sans-serif;
@@ -41,10 +43,14 @@ p{
 }
 .slide:nth-child(even) {
     background-color: #222;
-    box-shadow: 0px 0px 500px black, 0px 0px 500px black, 0px 0px 500px black, 0px 0px 500px black;
 }
-
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{
+    text-align: center;
+}
 #heroImage {
+    display: block;
+    max-width: 100%;
+    height:100vh;
     background-image: url("../imgs/amabilia.jpg");
     background-color: black;
     background-repeat: no-repeat;
@@ -59,7 +65,6 @@ p{
     top: 0px;
     left: 0px;
 }
-.container {}
 .navArrow {
     position: absolute;
     bottom: 10px;
@@ -90,23 +95,20 @@ p{
     margin-right: auto;
     width: 100%;
     text-align: center;
-    margin-top: 30vh;
+    margin-top: 13vh;
     z-index: 1000;
 }
-/*.textbox > h1 {
-    font-size: 7em;
-    text-transform: uppercase;
-    text-align: center;
-    text-shadow: 3px 3px 0px black, 4px 4px 0px white;
-}*/
+
 textbox > p{
     letter-spacing: 1px;
 }
 .btn-ghost {
     background: none;
+    margin: 0px auto;
+    font-size: 1.25em;
     border: .25em solid white;
     padding: 10px 15px;
-    /*margin: 10px;*/
+    text-align: center;
     text-transform: capitalize;
     text-decoration: none;
 }
@@ -115,10 +117,7 @@ textbox > p{
     background: rgba(255, 255, 255, .75);
 }
 
-/*Triple Images*/
-#slide3 p {
-    height: 50px;
-}
+/*-------Links-------*/
 .featureImage {
     width: auto;
 }
@@ -129,16 +128,14 @@ textbox > p{
     background-size: cover;
     background-position: center;
 }
-.colFeature {
-    text-align: center;
-    border-radius: 10px;
-}
+
 /*---------Menu---------*/
 #menu{
     position:absolute;
-    display: block;
+    display: inline-block;
     top:0px;
-    width:100%;
+    left: 20px;
+    width:300px;
     padding-top: 20px;
     padding-bottom:10px;
 }
@@ -147,12 +144,6 @@ textbox > p{
     top:30px;
     color:white;
     font-size: 1.5em;
-}
-#home{
-    left:10px;
-}
-#cards{
-    right:20px;
 }
  /*-------FOOTER-------*/
 
@@ -203,49 +194,62 @@ textbox > p{
 }
 
 /*---------Models---------*/
-.modelTitle{
-    text-transform: uppercase;
-    font-size: 1.5em;
-    font-family: 'Stalinist One', sans-serif;
-}
 .modelImage{
-    display:block;
-    widows: 100%;
-    height: 100%;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    margin: 5vh auto;
+    max-height: 400px;
+    width:auto;
 }
-.modelTray{
+/*-----------Cards-----------*/
+.card{
+    padding: 5px;
 }
+
+
 /*---------MEDIA RULES---------*/
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px){
     .textbox{
-        margin-top: 30px;
-        margin-bottom:30px
-    }
-    .textbox > h1 {
-        font-size: 3em;
-        text-align: center;
-        text-transform: uppercase;
-        text-shadow: 3px 3px 0px black, 4px 4px 0px white;
-    }
-    h1{
-        font-size: 5em;
-    }
-    .socialButton{
-        font-size: 2.25em;
+        margin-top: 5px;
     }
     .modelImage{
-        background-position: center;
+        max-height: 50vh;
+        width:auto;
     }
+}
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+      #heroimage{
+          background-image: url("../imgs/amabilia_mobile.jpg");
+          background-color: black;
+          background-repeat: no-repeat;
+          background-position: 50% -10%;
+          background-attachment: fixed;
+          background-size: contain;
+      }
+      .textbox{
+          margin-top: 10px;
+      }
+      .textbox > h1 {
+          font-size: 2em;
+          text-align: center;
+          text-transform: uppercase;
+          text-shadow: 3px 3px 0px black, 4px 4px 0px white;
+      }
+      h1{
+          font-size: 4em;
+      }
+      .socialButton{
+          font-size: 2em;
+      }
+
+}
+@media screen and (max-device-width:900px) {
+
 }
 /*---------MEDIA RULES---------*/
 @media screen and (max-width:500px) {
     h1{
         font-size:2.5em;
-    }
-    .modelImage{
-        background-position: top;
     }
 }
